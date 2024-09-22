@@ -1,0 +1,7 @@
+body {
+  font-family: "Poppins", "Roboto", "Montserrat", "Inter", "Open Sans",
+    sans-serif;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

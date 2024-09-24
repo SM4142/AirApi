@@ -1,6 +1,6 @@
-Şehir Dışında olduğum için backend ile bağlantıları gerçekleştiremedim yeterli zamanım olmadı.
-Bundan ötürü frontend tamamladım.
-İkisi hem backend hem frontend tarafında da ts kullandım.
+Şehir Dışında olduğum için backend ile bağlantıları gerçekleştiremedim yeterli zamanım yoktu.
+Bundan ötürü sadece frontend tamamladım.
+İkisi hem backend hem frontend tarafında de ts kullandım.
 Onun dışında tasarım için tailwind css kullandım.
 Ana sayfadaki sağ kısımlardaki resimler verilmediği için kendim bir resim koydum.
 Daha yeni dönüş sağladım yaşadığım şehre isterseniz tamamlayabilirim.

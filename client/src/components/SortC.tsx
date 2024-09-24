@@ -17,7 +17,6 @@ export default function SortC() {
           <label htmlFor="pm">12:00 PM - 5-59 PM</label>
         </div>
       </div>
-      <div></div>
       <div className="w-full">
         <h1 className="mb-3 text-black font-bold">Airlines Included</h1>
         <div>
@@ -39,6 +38,59 @@ export default function SortC() {
             <div className="flex flex-row items-center">
               <input type="radio" name="stops" id="2+stops" className="mr-2" />
               <label htmlFor="2+stops">2+ Stops</label>
+            </div>
+            <div>$230</div>
+          </div>
+        </div>
+      </div>
+      <div className="w-full">
+        <h1 className="mb-3 text-black font-bold">Airlines Included</h1>
+        <div className="flex flex-row w-full">
+          <div className="flex flex-row justify-between items-center mb-2 w-full">
+            <div className="flex flex-row items-center">
+              <input type="radio" name="air" id="Alitalia" className="mr-2" />
+              <label htmlFor="Alitalia">Alitalia</label>
+            </div>
+            <div>$230</div>
+          </div>
+        </div>
+        <div className="flex flex-row w-full">
+          <div className="flex flex-row justify-between items-center mb-2 w-full">
+            <div className="flex flex-row items-center">
+              <input type="radio" name="air" id="Lufthansa" className="mr-2" />
+              <label htmlFor="Lufthansa">Lufthansa</label>
+            </div>
+            <div>$230</div>
+          </div>
+        </div>
+        <div className="flex flex-row w-full">
+          <div className="flex flex-row justify-between items-center mb-1 w-full">
+            <div className="flex flex-row items-center">
+              <input type="radio" name="air" id="AirFrance" className="mr-2" />
+              <label htmlFor="AirFrance">Air France</label>
+            </div>
+            <div>$230</div>
+          </div>
+        </div>
+        <div className="flex flex-row w-full">
+          <div className="flex flex-row justify-between items-center mb-2 w-full">
+            <div className="flex flex-row items-center">
+              <input
+                type="radio"
+                name="air"
+                id="BrusselsAirlines"
+                className="mr-2"
+              />
+              <label htmlFor="BrusselsAirlines">Brussels Airlines</label>
+            </div>
+            <div>$230</div>
+          </div>
+        </div>
+        <div className="flex flex-row w-full">
+          <div className="flex flex-row justify-between items-center mb-2 w-full">
+            <div className="flex flex-row items-center">
+              <input type="radio" name="air" id="AirItaly" className="mr-2" />
+              <label htmlFor="AirItaly">Air Italy</label>
             </div>
             <div>$230</div>
           </div>

@@ -21,17 +21,21 @@ export default function NavbarHome() {
             </Link>
           </li>
           <li>
-            <span className="mr-1 text-[#4B0097]">
-              <FontAwesomeIcon icon={faEarthAsia} />
-            </span>
-            Discovery
+            <Link to="/">
+              <span className="mr-1 text-[#4B0097]">
+                <FontAwesomeIcon icon={faEarthAsia} />
+              </span>
+              Discovery
+            </Link>
           </li>
-          <li className="flex flex-row items-center">
-            <img
-              src="images/joanne-smith.jpg"
-              className="rounded-3xl w-[40px] h-[35px] object-cover mr-1"
-            />
-            Joane Smith
+          <li>
+            <Link to="/user" className="flex flex-row items-center">
+              <img
+                src="images/joanne-smith.jpg"
+                className="rounded-3xl w-[40px] h-[35px] object-cover mr-1"
+              />
+              Joane Smith
+            </Link>
           </li>
         </ul>
       </nav>

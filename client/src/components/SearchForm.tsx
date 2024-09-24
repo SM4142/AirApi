@@ -4,7 +4,7 @@ import { Form } from "react-router-dom";
 import { faPlane, faPlaneArrival } from "@fortawesome/free-solid-svg-icons";
 import { faPlaneDeparture } from "@fortawesome/free-solid-svg-icons";
 import { ButtonInterface } from "../interfaces/htmlInterfaces";
-import DatePicker from "react-datepicker";
+
 export default function SearchForm() {
   const [tripType, setTripType] = useState("round-trip");
   const changeTripType = (e: ButtonInterface) => {
@@ -15,7 +15,6 @@ export default function SearchForm() {
       setTripType("one-way");
     }
   };
-  const [value, setValue] = useState(null);
   return (
     <div className="w-full bg-white px-6 py-4 rounded-xl shadow-md mb-8">
       <Form method="get" className="flex flex-col">
@@ -26,7 +25,14 @@ export default function SearchForm() {
             </span>
             BOOK YOUR FLIGHT
           </h1>
-          <div className="inline-flex rounded-full bg-gray-200 ">
+          <div
+            className={
+              "inline-flex round ed-full bg-gray-200  transition-colors duration-700 transform " +
+              (tripType === "round-trip"
+                ? " rounded-l-full"
+                : " rounded-r-full")
+            }
+          >
             <input type="hidden" id="tripType" value={tripType} />
             <button
               type="button"
@@ -87,7 +93,7 @@ export default function SearchForm() {
               <input
                 type="date"
                 name="departure"
-                className="border-2 border-gray-500 rounded-l-xl p-1 w-full hover:border-[#4B0097] focus:outline-none focus:ring-2 focus:ring-[#4B0097] transition-all duration-300 transform ease-in-out"
+                className="border-2 border-gray-500 rounded-r-xl p-1 w-full hover:border-[#4B0097] focus:outline-none focus:ring-2 focus:ring-[#4B0097] transition-all duration-300 transform ease-in-out"
               />
             </div>
           </div>

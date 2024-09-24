@@ -4,10 +4,11 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
+import { AirplaneInterfaces } from "../interfaces/airInterface";
 
 export default function Flights() {
   return (
-    <div className="w-[100%] flex flex-col mb-6">
+    <div className="w-[100%] flex flex-col mb-4">
       <div className="bg-white rounded-tl-2xl rounded-tr-2xl rounded-br-2xl   w-full  pl-4 pt-4  ">
         <h1 className=" text-[18px] p-3">Milano - Madrid</h1>
         <div className="flex flex-row justify-between items-center">
@@ -55,7 +56,10 @@ export default function Flights() {
       </div>
       <div className="w-full ">
         <span className="block w-[156px] text-center text-[#4B0097]  p-3 bg-[#E6E0EB] rounded-b-xl">
-          <Link to="/" className=" underline border-[#4B0097] ">
+          <Link
+            to="/"
+            className=" underline border-[#4B0097]  hover:text-blue-950 transition-colors duration-300 transform ease-in-out "
+          >
             Check the details
           </Link>
         </span>
